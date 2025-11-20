@@ -46,4 +46,9 @@ public class ProductController {
         return productService.findProductById(pid);
     }
 
+    @GetMapping(value = "getAllProducts")
+    public List<Product> getAll(){
+        return productService.getAll();
+    }
+
 }

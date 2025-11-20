@@ -67,4 +67,8 @@ public class ProductService {
             return "Product not present";
         }
     }
+
+    public List<Product> getAll(){
+        return productRepository.findAll();
+    }
 }
